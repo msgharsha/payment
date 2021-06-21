@@ -98,8 +98,8 @@
         PayStandCheckout.onComplete(function (data) {
             console.log(">> flow complete >> ", data.response.data);
             PayStandCheckout.hideCheckout();
-            //window.location.href ="http://localhost:8080/paymentSuccess?res=" + JSON.stringify(data.response.data)
-            setTimeout(function(){document.location.href = "http://localhost:8080/paymentSuccess";},250);
+            window.location.href ="http://localhost:8080/paymentSuccess?res=" + JSON.stringify(data.response.data)
+            //setTimeout(function(){document.location.href = "http://localhost:8080/paymentSuccess";},250);
             
             
 
